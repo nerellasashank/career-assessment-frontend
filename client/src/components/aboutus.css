@@ -1,0 +1,196 @@
+/* Main container with background image */
+.about-us {
+  text-align: center;
+  padding: 50px 30px;
+  margin: 0;
+  background: linear-gradient(to right, #f2f7fc, #e6f7ff), url('../assets/images/sulimg.png'); /* Add background image */
+  background-size: cover;
+  background-position: center center; /* Ensure the image is centered */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+}
+
+/* Intro Section */
+.intro-section {
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #0044cc;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.about-description {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+  animation-delay: 0.5s;
+}
+
+.highlight {
+  color: #ff5733;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Mission Section */
+.mission-section {
+  margin-bottom: 50px;
+}
+
+.left-aligned {
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mission-section h2 {
+  color: #0044cc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* What We Do Section */
+.what-we-do {
+  margin-bottom: 50px;
+}
+
+.right-aligned {
+  text-align: right;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.what-we-do h2 {
+  color: #0044cc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Our Impact Section */
+.impact-section {
+  margin-bottom: 50px;
+}
+
+.impact-section h2 {
+  color: #0044cc;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Why Choose CareerFit Section */
+.why-choose-section {
+  margin-bottom: 50px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature {
+  flex: 1 1 220px;
+  margin: 20px;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(0.95);
+  opacity: 0;
+  animation: scaleIn 0.8s ease-out forwards;
+  animation-delay: calc(var(--feature-order, 0) * 0.2s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #0044cc;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.6rem;
+  margin: 15px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-in forwards;
+  animation-delay: 1s;
+}
+
+.explore-button {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  background-color: #ff5733;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #e74c3c;
+  transform: scale(1.1);
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

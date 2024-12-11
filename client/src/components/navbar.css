@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins:wght@400;600&display=swap');
+
+.navbar {
+  width: 100%;
+  background-color: transparent; /* Start with a transparent background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  z-index: 100;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #4a90e2; /* Elegant blue background when scrolled */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow for a modern look */
+}
+
+.navbar-brand {
+  color: #000000; /* Brand text in black */
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for elegance */
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Add spacing between links */
+}
+
+.navbar-links a {
+  color: #000000; /* Default link color: black */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Aboreto', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  background-color: #f1f1f1; /* Light gray background on hover */
+  color: #4a90e2; /* Blue text on hover */
+}
+
+.navbar.scrolled .navbar-links a {
+  color: #ffffff; /* White links on scrolled navbar */
+}
+
+.navbar-links a.active {
+  background-color: #fbbd08; /* Highlight for active link */
+  color: #ffffff; /* White text on active link */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links a {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+}

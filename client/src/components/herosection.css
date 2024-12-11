@@ -1,0 +1,575 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 110vh;
+  padding: 100px;
+  background: url('../assets/images/3people.png') no-repeat center center/cover;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+  padding: 20px;
+  color: white; /* Bright text for visibility */
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 4rem; /* Increased font size for more prominence */
+  margin-bottom: 10px; /* Increase spacing below the heading */
+  color: #ffffff; /* Bright white color */
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Stronger glow effect */
+  line-height: 1; /* Increased line height for better readability */
+  font-weight: bold; /* Make the text bolder for more impact */
+  letter-spacing: 1.5px; /* Slightly increased letter-spacing for a cleaner look */
+  text-transform: uppercase; /* Making the text uppercase for added emphasis */
+  max-width: 500%; /* Limit the width to prevent text from stretching too far */
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 60%; /* Adjust width for better alignment */
+  padding: 20px;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align text vertically */
+}
+
+
+
+.hero-text p {
+  font-size: 1.rem; /* Larger for emphasis */
+  color: #f0f0f0;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6); /* Subtle glow for contrast */
+}
+
+.intro-text {
+  font-size: 1.6rem; /* Larger, more readable font size */
+  line-height: 1.8; /* Add spacing between lines for readability */
+  color: rgb(23, 21, 21); /* Bright text for contrast */
+  text-align: left; /* Align the text to the left */
+  max-width: 800px; /* Limit the width for better readability */
+  margin: 20px 0; /* Add spacing above and below */
+  padding-left: 100px; /* Shift the text slightly to the right */
+  background-color: rgba(255, 255, 255, 0.4); /* Transparent white background */
+  border-radius: 10px; /* Rounded corners for the background */
+  padding: 20px; /* Padding inside the background block for better spacing */
+}
+
+
+.highlight-text {
+  color: #ff9000; /* Make the highlight text stand out */
+  font-weight: bold; /* Bold for emphasis */
+}
+
+.highlight {
+  font-style: italic; /* Add emphasis with italic styling */
+  color: #e67e22; /* Complementary highlight color */
+}
+
+.hbtn-assessment {
+  display: block; /* Ensure the button takes a new line */
+  margin: 30px auto; /* Center the button */
+  background-color: #ff9000; /* Vibrant button color */
+  color: #ffffff; /* White text for contrast */
+  padding: 15px 40px; /* Comfortable padding for clickability */
+  font-size: 1.5rem; /* Larger font size for prominence */
+  border-radius: 25px; /* Rounded corners for a modern look */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hbtn-assessment:hover {
+  background-color: #e67e22; /* Darker hover color */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+/* CareerFit Info Section */
+.careerfit-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #f7f7f7; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 40px 0;
+}
+
+.info-text {
+  max-width: 50%; /* Ensure the text block occupies half the section */
+  padding-left: 30px; /* Add some padding to the left for spacing */
+}
+
+.info-text h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-more-about {
+  background-color: #ff9000; /* Bright button color */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-more-about:hover {
+  background-color: #e67e22;
+}
+
+.info-image {
+  max-width: 45%; /* Image takes up the remaining space */
+  height: auto;
+}
+
+.info-image img {
+  width: 300px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes space below image */
+  border: 2px solid red; /* Add a border to confirm it's being loaded */
+}
+
+
+
+/* Who is it For Section */
+
+.who-is-it-for {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.icon-item {
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.icon-item strong {
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+.who-is-it-for {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  border-radius: 20px;
+}
+
+.who-is-it-for h2 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 40px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon-item h3 {
+  font-size: 1.8rem;
+  margin: 20px 0 10px;
+  color: #ffffff;
+}
+
+.icon-item p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Unique Colors for Blocks */
+.icon-item.admin {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+
+.icon-item.student {
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+}
+
+/* Hover Effect */
+.icon-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .icon-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* How It Works Section */
+.how-it-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.how-it-works-left {
+  flex: 1;
+  text-align: left;
+  margin-right: 40px; /* Adds space between left and right sections */
+}
+
+.how-it-works-left h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.how-it-works-left .intro-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.how-it-works-left .btn-start-now {
+  padding: 15px 30px;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #ff9000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.how-it-works-left .btn-start-now:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Right side with steps (2x2 Grid) */
+.how-it-works-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: 20px; /* Adds spacing between the blocks */
+  width: 100%;
+}
+
+.step {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.step h4 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.step p {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  background-color: #ffedcc; /* Light orange background on hover */
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works-left, .how-it-works-right {
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .steps {
+    grid-template-columns: 1fr; /* Stacks the steps vertically on smaller screens */
+    width: 80%;
+  }
+
+  .step {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Feedback Section */
+/* Feedback Section */
+.feedback-section {
+  background-color: #87cefa; /* Sky blue background */
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feedback-section h3 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Feedback Charts Container */
+.feedback-charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual Chart Item */
+.chart-item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chart-item p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+/* Discover the Benefits Section */
+.discover-benefits {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.discover-benefits h3 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.benefit-item {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.benefit-item h4 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+  color: #333;
+}
+
+.benefit-item p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.benefit-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item svg {
+  color: #ff9000; /* Icon color */
+  margin-bottom: 15px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .benefit-grid {
+    grid-template-columns: 1fr 1fr; /* Two items per row on smaller screens */
+  }
+
+  .benefit-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .feedback-charts {
+    grid-template-columns: 1fr; /* Stack items on top of each other on smaller screens */
+  }
+}
+
+
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #4a90e2;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cta-section h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #4a90e2;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #f1f3f4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .benefit {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .icon-list {
+    flex-direction: column;
+  }
+
+  .feedback-charts {
+    flex-direction: column;
+  }
+}
